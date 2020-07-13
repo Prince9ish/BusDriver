@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="5000"
+        android:drawable="@drawable/gradient_start1"/>
+
+    <item android:duration="5000"
+        android:drawable="@drawable/gradient_center1"/>
+
+    <item android:duration="5000"
+        android:drawable="@drawable/gradient_end1"/>
+
+</animation-list>

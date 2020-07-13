@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3EBEBEB"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context="com.bustracker.driver.MapsActivity">
+
+    <LinearLayout
+        android:layout_width="147dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".8"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:background="@drawable/gradient_animation1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00EBEBEB"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFD20C"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/busNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFD20C"
+                        android:fontFamily="@font/poiret_one"
+                        android:paddingLeft="5pt"
+                        android:paddingTop="2pt"
+                        android:paddingRight="5pt"
+                        android:paddingBottom="2pt"
+                        android:text="BUS 1"
+                        android:textColor="#262626"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/run"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poiret_one"
+                        android:gravity="center_horizontal|fill_vertical"
+                        android:text="MORNING RUN"
+                        android:textSize="8pt" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poiret_one"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="1pt"
+                    android:text="150"
+                    android:textSize="25pt"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2pt"
+                    android:fontFamily="@font/poiret_one"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="km/h"
+                    android:textSize="14pt" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:radius="18dp"
+                    android:text="Camera\nOverview"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:radius="18dp"
+                    android:text="Camera\nFollow"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:radius="18dp"
+                    android:text="Student\nTag Scan"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FA897B"
+                    android:fontFamily="sans-serif-light"
+                    android:radius="18dp"
+                    android:text="Finish\nTrip"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFCA0F"
+                android:fontFamily="@font/poiret_one"
+                android:paddingLeft="3pt"
+                android:paddingTop="2pt"
+                android:paddingBottom="2pt"
+                android:text="STUDENTS"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF">
+
+                <LinearLayout
+                    android:id="@+id/studentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00EBEBEB"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

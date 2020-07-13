@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:fontFamily="@font/poiret_one"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="SCHOOL BUS TRACKER"
+                android:textColor="#8D8C8C"
+                android:textSize="50pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poiret_one"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Driver Application"
+                android:textSize="25pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="326dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50pt"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poiret_one"
+                    android:gravity="center|center_vertical"
+                    android:text="BUS"
+                    android:textSize="15pt" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poiret_one"
+                    android:gravity="center|fill_horizontal|center_vertical|fill_vertical"
+                    android:padding="5pt"
+                    android:spinnerMode="dropdown"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20pt"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poiret_one"
+                    android:gravity="center|center_vertical"
+                    android:text="RUN"
+                    android:textSize="15pt" />
+
+                <Button
+                    android:id="@+id/moring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#80FFFFFF"
+                    android:fontFamily="@font/poiret_one"
+                    android:padding="10pt"
+                    android:radius="18dp"
+                    android:text="Morning"
+                    android:textSize="13pt"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#80FFFFFF"
+                    android:fontFamily="@font/poiret_one"
+                    android:padding="10pt"
+                    android:radius="18dp"
+                    android:text="Afternoon"
+                    android:textSize="13pt"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="636dp"
+                android:layout_height="141dp"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="562dp"
+                    android:layout_height="95dp"
+                    android:backgroundTint="#FAD849"
+                    android:fontFamily="@font/poiret_one"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="5pt"
+                    android:radius="30pt"
+                    android:text="Start"
+                    android:textSize="22pt"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

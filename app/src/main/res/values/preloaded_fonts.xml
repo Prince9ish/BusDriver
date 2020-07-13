@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cormorant_sc_light</item>
+        <item>@font/italianno</item>
+        <item>@font/michroma</item>
+        <item>@font/monoton</item>
+        <item>@font/poiret_one</item>
+        <item>@font/rock_salt</item>
+    </array>
+</resources>

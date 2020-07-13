@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4DE3E3E3"
+    android:fontFamily="@font/poiret_one"
+    android:gravity="center_horizontal|center_vertical|fill_vertical"
+    android:maxLines="1"
+    android:padding="13pt"
+    android:paddingTop="20pt"
+    android:paddingBottom="20pt"
+    android:text="B001"
+    android:textAllCaps="false"
+    android:textColor="#535353"
+    android:textSize="20pt"
+    android:textStyle="bold">
+
+</TextView>
