@@ -27,8 +27,8 @@ After select ”Finish trip” in Figure 6.7, Figure 6.9 will be show, it is the
 
 ## Hardware Used
 The process of our system is the same every day. When students get on the bus, they have to tap RFID tags with the reader on the bus. The reader is connected with the driver’s tablet. The application on the tablet will then update the student status to the Cloud Firestore. After that, the notification will be shown on the parent’s application.
-![Screenshot](Screenshot 2020-07-13 at 15.37.36.jpg)
+![Screenshot](Hardware.jpg)
 
 
 ## Colour Theme For Project
-![Screenshot](Screen Shot 2562-09-14 at 16.54.30.jpg)
+![Screenshot](Colour.jpg)
